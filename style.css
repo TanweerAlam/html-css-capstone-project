@@ -1,0 +1,198 @@
+body{
+    /* background-color: antiquewhite; */
+    padding: 10px 40px;
+}
+
+nav{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    /* position: relative; */
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    /* position: relative; */
+}
+
+/* nav > a:active {
+    position: absolute;
+    z-index: 5;
+    background: #f53145;
+    width: 40px;
+    height: 2px;
+    content: "";
+    left: 50%;
+    bottom: 0px;
+    margin-left: -20px;
+} */
+
+nav > a:hover {
+    color: #f53145;
+}
+
+.oswald-nav {
+  font-family: "Oswald", Arial, sans-serif;
+  /* font-optical-sizing: auto; */
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.oswald-headline-1 {
+    font-family: "Oswald", Arial, sans-serif;
+    /* font-optical-sizing: auto; */
+    font-size: 64px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.oswald-subhead {
+    font-family: "Oswald", Arial, sans-serif;
+    /* font-optical-sizing: auto; */
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    background:url("https://www.everywhereist.com/wp-content/themes/everywhereist-v3/images/bg-beige.jpg");
+    margin: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    max-height: 100vh;
+}
+
+.ribbon {
+    background: url("https://www.everywhereist.com/wp-content/themes/everywhereist-v3/images/wave.png") repeat-x;
+}
+
+.ribbon::before {
+    content: "";
+    position: absolute;
+    height: 34px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: url("https://www.everywhereist.com/wp-content/themes/everywhereist-v3/images/wave.png") repeat-x top left;
+
+}
+main > div {
+    text-align: center;
+}
+
+.introduction-section {
+    padding-top: 30px;
+}
+
+.introduction {
+    /* margin-top: 40px; */
+    display: flex;
+    /* flex-wrap: no-wrap; */
+}
+
+.intro {
+    /* width: 60%; */
+    padding: 0 10px;
+}
+
+.intro p {
+    font-family: "Oswald", Arial, sans-serif;
+    font-optical-sizing: auto;
+    /* font-size: 32px; */
+}
+
+.image {
+    padding: 0 10px;
+}
+
+.image  img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 968px) {
+    .introduction {
+      flex-direction: column;
+    }
+
+    .image {
+        order: -1;
+    }
+  }
+
+
+/* Contact page's style is below */
+
+form {
+    display: inline-block;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form label {
+    font-family: "Oswald", Arial, sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+/* References page */
+
+.reference-body {
+    text-align: center;
+    /* padding-bottom: 40px; */
+}
+
+.reference-list {
+    display: inline-block;
+    text-align: start;
+}
+
+.reference-list a {
+    list-style: none;
+    text-decoration: none;
+    font-family: "Oswald", Arial, sans-serif;
+    /* font-optical-sizing: auto; */
+    font-size: 32px;
+    color: black;
+}
+
+.reference-list a:hover {
+    color: darkgray;
+}
+
+/* Portfolio page */
+
+.portfolio-section {
+    /* text-align: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 3fr));
+    /* grid-template-columns: repeat(3, 1fr); */
+    justify-content: space-evenly;
+    /* padding-bottom: 40px; */
+}
+
+.portfolio-section figure {
+    padding: 0;
+    margin: 5px;
+}
+
+.portfolio-section figure img {
+    width: 300px ;
+    height: 220px;
+}
+
+.portfolio-section figure figcaption {
+    font-family: "Oswald", Arial, sans-serif;
+    font-optical-sizing: auto;
+}
